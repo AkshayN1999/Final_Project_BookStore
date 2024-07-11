@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="PROJECT.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <table align="center">
+                <tr style="width:1200px; height:160px; color:cadetblue">
+                    <td colespan="2">
+                        <asp:Image ID="Image1" runat="server" Height="180px" ImageAlign="Middle" ImageUrl="~/Images/admin.jpg" Width="1200px" />
+                    </td>
+                </tr>
+                <div>
+                <table>
+                <tr style="width:1200px; height:60px; color:cadetblue;" align="center">
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Add Product" Font-Bold="True" Font-Size="X-Large" BackColor="#4CADE2" Font-Names="Albori" ForeColor="White" BorderStyle="Outset" BorderColor="#66CCFF" OnClick="Button1_Click" />
+                    </td>
+                    <td>
+                        <asp:Button ID="Button2" runat="server" Text="Add Category" Font-Bold="True" Font-Size="X-Large" BackColor="#4CADE2" Font-Names="Albori" ForeColor="White" BorderStyle="Outset" BorderColor="#66CCFF" OnClick="Button2_Click"/>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button3" runat="server" Text="Delete Items" Font-Bold="True" Font-Size="X-Large" BackColor="#4CADE2" Font-Names="Albori" ForeColor="White" BorderStyle="Outset" BorderColor="#66CCFF" OnClick="Button3_Click"/>
+                    </td>
+                    <td>
+                        <asp:Button ID="Button4" runat="server" Text="Log Out" Font-Bold="True" Font-Size="X-Large" BackColor="#4CADE2" Font-Names="Albori" ForeColor="White" BorderStyle="Outset" BorderColor="#66CCFF" OnClick="Button4_Click"/>
+                    </td>
+                </tr>
+                </table>
+                </div>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
